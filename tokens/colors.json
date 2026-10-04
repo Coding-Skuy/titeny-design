@@ -1,0 +1,9 @@
+{
+  "titeny": {
+    "hijau-panen": { "value": "#1B7A3D" },
+    "kuning-harga": { "value": "#C98A00" },
+    "merah-peringatan": { "value": "#C0392B" },
+    "latar": { "value": "#FAF7EF" },
+    "tinta": { "value": "#1E1E1E" }
+  }
+}

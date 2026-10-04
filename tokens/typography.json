@@ -1,0 +1,8 @@
+{
+  "titeny": {
+    "judul": { "value": "24px" },
+    "badan": { "value": "15px" },
+    "angka-besar": { "value": "32px" },
+    "keluarga": { "value": "Inter, system-ui, sans-serif" }
+  }
+}

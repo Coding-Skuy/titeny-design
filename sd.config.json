@@ -1,0 +1,10 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "dist/",
+      "files": [{ "destination": "titeny.css", "format": "css/variables" }]
+    }
+  }
+}
