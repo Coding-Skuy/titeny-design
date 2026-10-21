@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk — Titeny (prototipe 360 px)</title>
+<link rel="stylesheet" href="../../../dist/titeny.css">
+<link rel="stylesheet" href="../prototipe.css">
+
+</head>
+<body>
+<div class="halaman"><header class="header"><span class="merek">Titeny</span><span class="ket">Papan insight · Akses per peran</span></header><h1>Masuk</h1><section class="kartu" id="petani" aria-labelledby="h-pin"><h2 id="h-pin">Masuk petani / vendor</h2><div class="baris-form"><label for="pin">PIN zona (6 digit)</label><input id="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="6" aria-describedby="pin-ket"><p class="ket" id="pin-ket">PIN dari tautan yang Anda terima.</p></div><button class="tombol penuh">Masuk</button></section><section class="varian" aria-label="Varian: PIN salah"><h2 class="varian-judul">Varian keadaan: PIN salah</h2><section class="kartu"><h2>Masuk petani / vendor</h2><div class="baris-form"><label for="pin2">PIN zona (6 digit)</label><input id="pin2" inputmode="numeric" value="12345" aria-invalid="true" aria-describedby="pin-err"></div><div id="pin-err" class="banner f-merah" role="status"><b aria-hidden="true">■</b><div><strong>PIN tidak valid</strong><p>PIN harus 6 digit angka dan sesuai zona.</p></div></div><button class="tombol penuh">Masuk</button></section></section><section class="varian" aria-label="Varian: CEO: akun + OTP"><h2 class="varian-judul">Varian keadaan: CEO: akun + OTP</h2><section class="kartu" id="ceo" aria-labelledby="h-ceo"><h2 id="h-ceo">Masuk CEO</h2><div class="baris-form"><label for="surel">Akun</label><input id="surel" type="email" autocomplete="username"></div><div class="baris-form"><label for="otp">Kode OTP</label><input id="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code"></div><button class="tombol penuh">Masuk</button></section></section></div>
+</body>
+</html>
