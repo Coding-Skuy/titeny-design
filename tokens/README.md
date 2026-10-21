@@ -23,7 +23,7 @@ Bangun: `npm run build:tokens` menghasilkan `dist/titeny.css` (`:root { --ttn-* 
 | data-kurang | Data harga belum cukup | ○ | `netral` | `netral-latar` | §4 |
 | luring | Luring | ℹ | `info` | `info-latar` | kontrak desktop §2 |
 
-Lencana keputusan petani (`JUAL SEKARANG` merah ■, `TAHAN 3 HARI` hijau ●, `CICIL JUAL` kuning ▲) dan status rekomendasi (`Baru` info, `Dikerjakan` kuning, `Selesai` hijau) ada di `sinyal.spec.json`. Aturan: warna tidak pernah satu-satunya pembawa makna; setiap lencana menampilkan teks dan bentuk. Peta matriks CEO 5x12 menampilkan teks singkat di setiap sel (`+`/`~`/`−` bersama bentuk) selain warna.
+Lencana keputusan petani (`JUAL SEKARANG` merah ■, `TAHAN 3 HARI` hijau ●, `CICIL JUAL` kuning ▲) dan status rekomendasi (`Baru` info, `Dikerjakan` kuning, `Selesai` hijau) ada di `sinyal.spec.json`. Aturan: warna tidak pernah satu-satunya pembawa makna; setiap lencana menampilkan teks dan bentuk. Sel matriks CEO 5x12 menampilkan bentuk + selisih % (dengan `aria-label` berisi teks status) selain warna.
 
 ## Kontras
 
