@@ -1,9 +1,11 @@
 {
   "name": "titeny-design",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "build:tokens": "style-dictionary build --config sd.config.json"
+    "build:tokens": "style-dictionary build --config sd.config.json && style-dictionary build --config sd.compose.config.json",
+    "test": "node --test --test-concurrency=1 scripts/*.test.mjs",
+    "test:kontras": "node scripts/kontras.mjs"
   },
   "devDependencies": {
     "style-dictionary": "4.0.0"

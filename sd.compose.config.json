@@ -1,0 +1,17 @@
+{
+  "source": ["tokens/colors.json"],
+  "platforms": {
+    "compose": {
+      "transformGroup": "compose",
+      "prefix": "ttn",
+      "buildPath": "dist/compose/",
+      "files": [
+        {
+          "destination": "TitenyWarna.kt",
+          "format": "compose/object",
+          "options": { "className": "TitenyWarna", "packageName": "id.titeny.design", "type": "Color" }
+        }
+      ]
+    }
+  }
+}

@@ -1,8 +1,41 @@
 {
-  "titeny": {
-    "judul": { "value": "24px" },
-    "badan": { "value": "15px" },
-    "angka-besar": { "value": "32px" },
-    "keluarga": { "value": "Inter, system-ui, sans-serif" }
+  "font": {
+    "keluarga": { "$type": "fontFamily", "$value": "Inter, system-ui, 'Segoe UI', Roboto, sans-serif", "$description": "Segoe UI menjadi cadangan pada desktop Windows." },
+    "keluarga-angka": { "$type": "fontFamily", "$value": "Inter, system-ui, 'Segoe UI', Roboto, sans-serif", "$description": "Gunakan font-variant-numeric: tabular-nums pada kolom angka (tabel, KPI)." }
+  },
+  "ukuran": {
+    "$type": "dimension",
+    "keterangan": { "$value": "13px", "$description": "Keterangan, stempel waktu, sumbu grafik. Tidak untuk teks berstatus penting." },
+    "badan": { "$value": "15px" },
+    "badan-besar": { "$value": "17px" },
+    "judul": { "$value": "24px", "$description": "Judul papan." },
+    "judul-kartu": { "$value": "18px" },
+    "angka-besar": { "$value": "32px", "$description": "KPI utama (harga hari ini, saran stok)." },
+    "angka-tabel": { "$value": "14px", "$description": "Sel angka tabel padat desktop." }
+  },
+  "bobot": {
+    "$type": "fontWeight",
+    "normal": { "$value": 400 },
+    "tebal": { "$value": 600 }
+  },
+  "tinggi-baris": {
+    "$type": "number",
+    "rapat": { "$value": 1.25 },
+    "normal": { "$value": 1.5 }
+  },
+  "radius": {
+    "$type": "dimension",
+    "kartu": { "$value": "12px" },
+    "kontrol": { "$value": "8px" },
+    "lencana": { "$value": "999px" }
+  },
+  "ruang": {
+    "$type": "dimension",
+    "1": { "$value": "4px" },
+    "2": { "$value": "8px" },
+    "3": { "$value": "12px" },
+    "4": { "$value": "16px" },
+    "6": { "$value": "24px" },
+    "target-sentuh": { "$value": "44px", "$description": "Tinggi minimal elemen yang dapat diketuk pada 360 px." }
   }
 }
