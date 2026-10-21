@@ -29,8 +29,8 @@ tokens/sinyal.spec.json   # status -> warna + teks + bentuk
 tokens/kontras.json       # pasangan yang diuji AA
 tokens/README.md          # sinyal, kontras, format IDR, versi
 scripts/                  # verifikasi kontras dan format IDR
-docs/flow/                # flow + screen (papan-web-360.md)
-src/prototipe/            # prototipe HTML statis (web/), dibangun dari scripts/prototipe
+docs/flow/                # flow + screen (papan-web-360.md, desktop-analis.md)
+src/prototipe/            # prototipe HTML statis (web/, desktop/), dibangun dari scripts/prototipe
 src/dashboard.md          # spesifikasi dasbor awal
 ```
 
@@ -42,5 +42,6 @@ Prinsip: kontras tinggi untuk angka harga, status selalu warna + teks + bentuk, 
 |---|---|---|---|
 | Token (warna sinyal, tipografi) | TTN-DSG-002 | **Belum dibuat** — butuh akun Figma pemilik tim; tidak dapat dibuat oleh agen | [`tokens/`](./tokens/) |
 | Flow + screen 3 papan web 360 px | TTN-DSG-003 | **Belum dibuat** (sama) | [`docs/flow/papan-web-360.md`](./docs/flow/papan-web-360.md), [`src/prototipe/web/`](./src/prototipe/web/) |
+| Flow + screen desktop analis (5 layar) | TTN-DSG-004 | **Belum dibuat** (sama) | [`docs/flow/desktop-analis.md`](./docs/flow/desktop-analis.md), [`src/prototipe/desktop/`](./src/prototipe/desktop/) |
 
 Selama berkas Figma belum ada, sumber kebenaran visual adalah berkas di repo ini. Baris tautan Figma akan diisi oleh manusia yang membuat berkasnya; jangan mengisi tautan karangan.
