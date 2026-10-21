@@ -1,10 +1,11 @@
 {
-  "source": ["tokens/**/*.json"],
+  "source": ["tokens/colors.json", "tokens/typography.json"],
   "platforms": {
     "css": {
       "transformGroup": "css",
+      "prefix": "ttn",
       "buildPath": "dist/",
-      "files": [{ "destination": "titeny.css", "format": "css/variables" }]
+      "files": [{ "destination": "titeny.css", "format": "css/variables", "options": { "selector": ":root" } }]
     }
   }
 }
