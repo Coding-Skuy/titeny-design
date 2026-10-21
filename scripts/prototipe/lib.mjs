@@ -82,7 +82,8 @@ export const navPeran = (aktif) =>
 
 export const varian = (judul, isi) => `<section class="varian" aria-label="Varian: ${esc(judul)}"><h2 class="varian-judul">Varian keadaan: ${esc(judul)}</h2>${isi}</section>`;
 
-export function halaman({ judul, isi, css = '../../../dist/titeny.css', css2 = '../prototipe.css', lebarMin = '' }) {
+export function halaman({ judul, isi, css = '../../../dist/titeny.css', css2 = ['../prototipe.css'], lebarMin = '' }) {
+  const css2a = [].concat(css2);
   return `<!doctype html>
 <html lang="id">
 <head>
@@ -90,7 +91,7 @@ export function halaman({ judul, isi, css = '../../../dist/titeny.css', css2 = '
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(judul)}</title>
 <link rel="stylesheet" href="${css}">
-<link rel="stylesheet" href="${css2}">
+${css2a.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}
 ${lebarMin ? `<style>body{min-width:${lebarMin}}</style>` : ''}
 </head>
 <body>
