@@ -1,9 +1,26 @@
 {
-  "titeny": {
-    "hijau-panen": { "value": "#1B7A3D" },
-    "kuning-harga": { "value": "#C98A00" },
-    "merah-peringatan": { "value": "#C0392B" },
-    "latar": { "value": "#FAF7EF" },
-    "tinta": { "value": "#1E1E1E" }
-  }
+  "$type": "color",
+  "latar": { "$value": "#f6f7f4", "$description": "Latar halaman." },
+  "kartu": { "$value": "#ffffff", "$description": "Latar kartu/tabel." },
+  "zebra": { "$value": "#edf0ea", "$description": "Baris selang-seling tabel padat desktop." },
+  "garis": { "$value": "#d5d9d0", "$description": "Garis dekoratif (pemisah). Bukan batas kontrol; untuk batas kontrol pakai garis-kuat." },
+  "garis-kuat": { "$value": "#6b7a6f", "$description": "Batas kontrol (input, tombol sekunder): minimal 3:1 terhadap kartu dan latar." },
+  "teks": { "$value": "#1b2a1f", "$description": "Teks utama." },
+  "teks-lembut": { "$value": "#4a5a4e", "$description": "Teks sekunder, keterangan." },
+  "primer": { "$value": "#1f6b3a", "$description": "Aksen merek, tombol utama." },
+  "primer-teks": { "$value": "#ffffff", "$description": "Teks di atas primer." },
+  "hijau": { "$value": "#1e7a3c", "$description": "Sinyal seimbang (teks/ikon di atas hijau-latar atau kartu)." },
+  "hijau-latar": { "$value": "#dff3e4", "$description": "Latar sinyal seimbang." },
+  "kuning": { "$value": "#7a5a00", "$description": "Sinyal waspada / Akurasi terbatas (teks/ikon)." },
+  "kuning-latar": { "$value": "#fdf0bf", "$description": "Latar sinyal waspada." },
+  "merah": { "$value": "#a31d1d", "$description": "Sinyal defisit / peringatan (teks/ikon)." },
+  "merah-latar": { "$value": "#fbdcdc", "$description": "Latar sinyal defisit." },
+  "netral": { "$value": "#3f4d43", "$description": "Status netral/tidak ada sinyal (Estimasi, kedaluwarsa, dikerjakan)." },
+  "netral-latar": { "$value": "#e4e8e1", "$description": "Latar status netral." },
+  "info": { "$value": "#0a4a94", "$description": "Banner informasi (mode luring desktop)." },
+  "info-latar": { "$value": "#dbe8f8", "$description": "Latar banner informasi." },
+  "fokus": { "$value": "#0b57d0", "$description": "Cincin fokus keyboard, 3 px; minimal 3:1 terhadap latar dan kartu." },
+  "grafik-garis": { "$value": "#1f6b3a", "$description": "Garis prediksi pada grafik; dibedakan dari pita dengan pola/gaya garis, bukan warna saja." },
+  "grafik-riwayat": { "$value": "#4a5a4e", "$description": "Garis riwayat/aktual (gaya garis solid; prediksi putus-putus)." },
+  "grafik-pita": { "$value": "#cfe6d6", "$description": "Pita rentang P10-P90 (dekoratif; nilai selalu ada di tabel alternatif)." }
 }

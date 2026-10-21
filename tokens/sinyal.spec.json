@@ -1,0 +1,23 @@
+{
+  "$description": "Pemetaan status sinyal -> warna + teks + bentuk. Status TIDAK BOLEH hanya warna: selalu tampilkan `teks` dan `bentuk` (glif). Klien membaca berkas ini bersama colors.json. Perubahan makna = versi token baru (AGENTS.md).",
+  "versi": "1.0.0",
+  "sinyal": {
+    "seimbang": { "teks": "Seimbang", "bentuk": "●", "bentuk-nama": "lingkaran", "fg": "hijau", "bg": "hijau-latar", "sumber": "produk/10-papan-insight.md §2 Papan Vendor: hijau seimbang" },
+    "waspada": { "teks": "Waspada", "bentuk": "▲", "bentuk-nama": "segitiga", "fg": "kuning", "bg": "kuning-latar", "sumber": "produk/10-papan-insight.md §2: kuning waspada" },
+    "defisit": { "teks": "Defisit", "bentuk": "■", "bentuk-nama": "persegi", "fg": "merah", "bg": "merah-latar", "sumber": "produk/10-papan-insight.md §2: merah defisit" },
+    "akurasi-terbatas": { "teks": "Akurasi terbatas", "bentuk": "▲", "bentuk-nama": "segitiga", "fg": "kuning", "bg": "kuning-latar", "sumber": "produk/10-papan-insight.md §4: lencana kuning bila kepercayaan rendah" },
+    "estimasi": { "teks": "Estimasi — transaksi kemarin belum masuk", "bentuk": "◆", "bentuk-nama": "belah ketupat", "fg": "netral", "bg": "netral-latar", "sumber": "produk/10-papan-insight.md §4" },
+    "data-kurang": { "teks": "Data harga belum cukup", "bentuk": "○", "bentuk-nama": "lingkaran kosong", "fg": "netral", "bg": "netral-latar", "sumber": "produk/10-papan-insight.md §4" },
+    "luring": { "teks": "Luring", "bentuk": "ℹ", "bentuk-nama": "info", "fg": "info", "bg": "info-latar", "sumber": "produk/22-kontrak-desktop-windows.md §2" }
+  },
+  "keputusan-petani": {
+    "jual-sekarang": { "teks": "JUAL SEKARANG", "fg": "merah", "bg": "merah-latar", "bentuk": "■" },
+    "tahan-3-hari": { "teks": "TAHAN 3 HARI", "fg": "hijau", "bg": "hijau-latar", "bentuk": "●" },
+    "cicil-jual": { "teks": "CICIL JUAL", "fg": "kuning", "bg": "kuning-latar", "bentuk": "▲" }
+  },
+  "status-rekomendasi": {
+    "baru": { "teks": "Baru", "fg": "info", "bg": "info-latar", "bentuk": "ℹ" },
+    "dikerjakan": { "teks": "Dikerjakan", "fg": "kuning", "bg": "kuning-latar", "bentuk": "▲" },
+    "selesai": { "teks": "Selesai", "fg": "hijau", "bg": "hijau-latar", "bentuk": "●" }
+  }
+}

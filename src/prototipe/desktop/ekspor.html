@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ekspor — Titeny Analis (prototipe 1120×720)</title>
+<link rel="stylesheet" href="../../../dist/titeny.css">
+<link rel="stylesheet" href="../prototipe.css">
+<link rel="stylesheet" href="../desktop.css">
+
+</head>
+<body>
+<div class="app"><header class="bar-atas"><span class="merek">Titeny Analis</span><span class="lencana f-hijau"><b aria-hidden="true">●</b> Daring</span><span class="ket">Disegarkan 4 Okt 2026 23.10 · polling prediksi 15 menit, antrean 5 menit</span><span class="spasi"></span><span class="ket">Analis · token berlaku 8 jam</span><button class="tombol sekunder" type="button">Segarkan <kbd>Ctrl+R</kbd></button></header>
+<nav class="samping" aria-label="Layar analis"><ol><li><a href="antrean-validasi.html">1. Antrean Validasi</a></li><li><a href="tahan-prediksi.html">2. Tahan Prediksi</a></li><li><a href="bandingkan-model.html">3. Bandingkan Model</a></li><li><a href="kelola-rekomendasi.html">4. Kelola Rekomendasi</a></li><li><a href="ekspor.html" aria-current="page">5. Ekspor</a></li></ol></nav>
+<main class="utama"><h1>Ekspor</h1><p class="ket">Data pada prototipe ini adalah contoh ilustrasi, bukan data nyata.</p><div class="dua-kolom"><section class="kartu" aria-labelledby="h-ek"><h2 id="h-ek">Buat ekspor</h2>
+<fieldset class="pilihan"><legend class="sr-saja">Jenis data</legend><label><input type="radio" name="jenis" checked> Harga H+7</label><label><input type="radio" name="jenis"> Demand</label><label><input type="radio" name="jenis"> Panen</label><label><input type="radio" name="jenis"> Jejak akurasi</label></fieldset>
+<fieldset class="pilihan"><legend class="sr-saja">Format</legend><label><input type="radio" name="fmt"> CSV</label><label><input type="radio" name="fmt" checked> XLSX</label></fieldset>
+<p>Nama berkas: <code>titeny_harga_20261004_2310.xlsx</code></p>
+<p class="ket">Maksimal 50.000 baris per berkas; data lebih besar dipecah otomatis menjadi beberapa berkas bernomor.</p>
+<button class="tombol" type="button" id="ekspor-mulai">Ekspor <kbd>Ctrl+E</kbd></button></section><section class="kartu" aria-labelledby="h-je"><h2 id="h-je">Riwayat</h2><table class="zebra" id="tabel-jejak-ekspor"><caption>Jejak ekspor (dicatat untuk audit Lumbung keuangan)</caption><thead><tr><th scope="col">Waktu</th><th scope="col">Nama berkas</th><th scope="col" class="n">Baris</th><th scope="col">SHA-256 (awal…akhir)</th></tr></thead><tbody><tr><th scope="row">2026-10-03 22.40</th><td>titeny_demand_20261003_2240.csv</td><td class="n">12.480</td><td>3f9a1c…c21e07</td></tr><tr><th scope="row">2026-10-02 16.05</th><td>titeny_akurasi_20261002_1605.xlsx</td><td class="n">1.140</td><td>8b04de…91a3f2</td></tr></tbody></table><p class="ket">Hash contoh ilustrasi. Ekspor massal hanya tersedia di desktop, tidak di web.</p></section></div>
+<section class="varian" aria-label="Varian: ekspor berjalan dan selesai"><h2 class="varian-judul">Varian keadaan: ekspor berjalan dan selesai</h2><p><span class="lencana f-hijau"><b aria-hidden="true">●</b> Selesai</span> titeny_harga_20261004_2310.xlsx · 8.400 baris · SHA-256 tercatat.</p></section>
+<section class="varian" aria-label="Varian: melebihi 50.000 baris"><h2 class="varian-judul">Varian keadaan: melebihi 50.000 baris</h2><div class="banner f-kuning" role="status"><b aria-hidden="true">▲</b><div><strong>Ekspor dipecah</strong><p>Data 120.000 baris dipecah menjadi 3 berkas (maks 50.000 baris per berkas).</p></div></div></section>
+<section class="varian" aria-label="Varian: mode luring"><h2 class="varian-judul">Varian keadaan: mode luring</h2><div class="banner f-info" role="status"><b aria-hidden="true">ℹ</b><div><strong>Luring — data 2026-10-03 23.00</strong><p>Menampilkan cache terakhir. Aksi tulis (setuju, koreksi, tolak, tahan) diantre dan terkirim saat daring dengan kunci idempoten <code>aksi_id</code>.</p></div></div><p class="ket">Ekspor memakai cache lokal; baris diberi keterangan "data 2026-10-03 23.00" di berkas.</p></section></main>
+<footer class="bar-shortcut" aria-label="Pintasan keyboard"><span><kbd>Ctrl+R</kbd> Segarkan</span><span><kbd>Ctrl+E</kbd> Ekspor</span><span><kbd>Esc</kbd> Kembali</span></footer></div>
+</body>
+</html>

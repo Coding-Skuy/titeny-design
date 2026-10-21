@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tahan Prediksi — Titeny Analis (prototipe 1120×720)</title>
+<link rel="stylesheet" href="../../../dist/titeny.css">
+<link rel="stylesheet" href="../prototipe.css">
+<link rel="stylesheet" href="../desktop.css">
+
+</head>
+<body>
+<div class="app"><header class="bar-atas"><span class="merek">Titeny Analis</span><span class="lencana f-hijau"><b aria-hidden="true">●</b> Daring</span><span class="ket">Disegarkan 4 Okt 2026 23.10 · polling prediksi 15 menit, antrean 5 menit</span><span class="spasi"></span><span class="ket">Analis · token berlaku 8 jam</span><button class="tombol sekunder" type="button">Segarkan <kbd>Ctrl+R</kbd></button></header>
+<nav class="samping" aria-label="Layar analis"><ol><li><a href="antrean-validasi.html">1. Antrean Validasi</a></li><li><a href="tahan-prediksi.html" aria-current="page">2. Tahan Prediksi</a></li><li><a href="bandingkan-model.html">3. Bandingkan Model</a></li><li><a href="kelola-rekomendasi.html">4. Kelola Rekomendasi</a></li><li><a href="ekspor.html">5. Ekspor</a></li></ol></nav>
+<main class="utama"><h1>Tahan Prediksi</h1><p class="ket">Data pada prototipe ini adalah contoh ilustrasi, bukan data nyata.</p><div class="dua-kolom"><section class="kartu" aria-labelledby="h-tt"><h2 id="h-tt">Penahanan</h2><table class="zebra" id="tabel-tahan"><caption>Penahanan aktif dan riwayat</caption><thead><tr><th scope="col">Komoditas · pasar</th><th scope="col">Alasan</th><th scope="col">Berlaku sampai</th><th scope="col">Sisa</th><th scope="col">Status</th></tr></thead><tbody><tr><th scope="row">Cabai merah · Jakarta Timur 01</th><td>Sampel hanya 2 lapak.</td><td>2026-10-07</td><td>3 hari</td><td><span class="lencana f-kuning"><b aria-hidden="true">▲</b> Ditahan</span></td></tr><tr><th scope="row">Tomat · Bogor 02</th><td>Harga outlier menunggu verifikasi.</td><td>2026-10-05</td><td>1 hari</td><td><span class="lencana f-kuning"><b aria-hidden="true">▲</b> Ditahan</span></td></tr><tr><th scope="row">Kentang · Bandung 01</th><td>Data panen belum lengkap.</td><td>2026-09-30</td><td>0</td><td><span class="lencana f-netral"><b aria-hidden="true">◆</b> Kedaluwarsa otomatis</span></td></tr></tbody></table><p class="ket">Penahanan maks 7 hari, lalu kedaluwarsa otomatis dan pasangan kembali tayang di papan petani.</p></section><section class="kartu" aria-labelledby="h-th"><h2 id="h-th">Tahan pasangan komoditas-pasar</h2>
+<div class="baris-form"><label for="th-k">Komoditas</label><select id="th-k"><option>Cabai merah</option></select></div>
+<div class="baris-form"><label for="th-p">Pasar</label><select id="th-p"><option>Jakarta Timur 01</option></select></div>
+<div class="baris-form"><label for="th-s">Berlaku sampai (maks 7 hari)</label><input id="th-s" value="2026-10-07"></div>
+<div class="baris-form"><label for="th-a">Alasan (10–140 karakter)</label><textarea id="th-a">Sampel hanya 2 lapak.</textarea><p class="hitung" id="th-h">21/140 · Alasan valid.</p></div>
+<div class="baris-aksi"><button class="tombol" type="button" id="kirim-tahan">Tahan dari papan petani</button></div></section></div><section class="varian" aria-label="Varian: tanggal melebihi 7 hari: Kirim nonaktif"><h2 class="varian-judul">Varian keadaan: tanggal melebihi 7 hari: Kirim nonaktif</h2><section class="kartu"><h2>Tahan pasangan komoditas-pasar</h2><div class="baris-form"><label for="th-s2">Berlaku sampai (maks 7 hari)</label><input id="th-s2" value="2026-10-20" aria-invalid="true" aria-describedby="th-e2"></div><div id="th-e2" class="banner f-merah" role="status"><b aria-hidden="true">■</b><div><strong>Penahanan ditolak</strong><p>Tanggal melebihi 7 hari dari hari ini (maks 2026-10-11).</p></div></div><button class="tombol" type="button" id="kirim-tahan-salah" disabled aria-disabled="true">Tahan dari papan petani</button></section></section><section class="varian" aria-label="Varian: mode luring"><h2 class="varian-judul">Varian keadaan: mode luring</h2><div class="banner f-info" role="status"><b aria-hidden="true">ℹ</b><div><strong>Luring — data 2026-10-03 23.00</strong><p>Menampilkan cache terakhir. Aksi tulis (setuju, koreksi, tolak, tahan) diantre dan terkirim saat daring dengan kunci idempoten <code>aksi_id</code>.</p></div></div><p><span class="lencana f-info"><b aria-hidden="true">ℹ</b> Antre kirim</span> Penahanan diantre dan baru berlaku di server saat terkirim.</p></section></main>
+<footer class="bar-shortcut" aria-label="Pintasan keyboard"><span><kbd>Ctrl+R</kbd> Segarkan</span><span><kbd>Ctrl+E</kbd> Ekspor</span><span><kbd>Esc</kbd> Kembali</span></footer></div>
+</body>
+</html>

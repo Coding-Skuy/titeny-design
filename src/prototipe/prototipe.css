@@ -1,0 +1,75 @@
+/* Gaya prototipe statis TTN-DSG-003/004. Hanya memakai token (--ttn-*) dari dist/titeny.css. Bukan kode produk. */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--ttn-latar); }
+body { margin: 0; color: var(--ttn-teks); font-family: var(--ttn-font-keluarga); font-size: var(--ttn-ukuran-badan); line-height: var(--ttn-tinggi-baris-normal); overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid var(--ttn-fokus); outline-offset: 2px; }
+.halaman { max-width: 100%; padding: 0 var(--ttn-ruang-4) var(--ttn-ruang-6); }
+h1 { font-size: var(--ttn-ukuran-judul); line-height: var(--ttn-tinggi-baris-rapat); margin: var(--ttn-ruang-4) 0 var(--ttn-ruang-2); }
+h2 { font-size: var(--ttn-ukuran-judul-kartu); line-height: var(--ttn-tinggi-baris-rapat); margin: 0 0 var(--ttn-ruang-2); }
+h3 { font-size: var(--ttn-ukuran-badan-besar); margin: var(--ttn-ruang-3) 0 var(--ttn-ruang-1); }
+p { margin: 0 0 var(--ttn-ruang-2); }
+.ket { font-size: var(--ttn-ukuran-keterangan); color: var(--ttn-teks-lembut); }
+.header { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--ttn-ruang-2); padding-top: var(--ttn-ruang-3); }
+.merek { font-weight: var(--ttn-bobot-tebal); color: var(--ttn-primer); }
+.nav-peran { display: flex; gap: var(--ttn-ruang-2); margin: var(--ttn-ruang-2) 0; padding: 0; list-style: none; }
+.nav-peran a { display: flex; align-items: center; justify-content: center; min-height: var(--ttn-ruang-target-sentuh); padding: 0 var(--ttn-ruang-3); border: 1px solid var(--ttn-garis-kuat); border-radius: var(--ttn-radius-kontrol); background: var(--ttn-kartu); color: var(--ttn-teks); text-decoration: none; }
+.nav-peran li { flex: 1 1 0; min-width: 0; }
+.nav-peran a[aria-current="page"] { background: var(--ttn-primer); color: var(--ttn-primer-teks); border-color: var(--ttn-primer); font-weight: var(--ttn-bobot-tebal); }
+.kartu { background: var(--ttn-kartu); border: 1px solid var(--ttn-garis); border-radius: var(--ttn-radius-kartu); padding: var(--ttn-ruang-4); margin: var(--ttn-ruang-3) 0; }
+.angka-besar { font-size: var(--ttn-ukuran-angka-besar); line-height: var(--ttn-tinggi-baris-rapat); font-weight: var(--ttn-bobot-tebal); font-variant-numeric: tabular-nums; }
+.lencana { display: inline-flex; align-items: center; gap: var(--ttn-ruang-1); padding: 2px var(--ttn-ruang-3); border-radius: var(--ttn-radius-lencana); font-weight: var(--ttn-bobot-tebal); font-size: var(--ttn-ukuran-badan); border: 1px solid currentColor; }
+.lencana b { font-weight: normal; }
+.f-hijau { color: var(--ttn-hijau); background: var(--ttn-hijau-latar); }
+.f-kuning { color: var(--ttn-kuning); background: var(--ttn-kuning-latar); }
+.f-merah { color: var(--ttn-merah); background: var(--ttn-merah-latar); }
+.f-netral { color: var(--ttn-netral); background: var(--ttn-netral-latar); }
+.f-info { color: var(--ttn-info); background: var(--ttn-info-latar); }
+.banner { display: flex; gap: var(--ttn-ruang-2); align-items: flex-start; padding: var(--ttn-ruang-3); border: 1px solid currentColor; border-radius: var(--ttn-radius-kontrol); margin: var(--ttn-ruang-3) 0; }
+.banner b { font-weight: normal; }
+.banner p { margin: 0; color: var(--ttn-teks); }
+.tombol { display: inline-flex; align-items: center; justify-content: center; min-height: var(--ttn-ruang-target-sentuh); padding: 0 var(--ttn-ruang-4); border-radius: var(--ttn-radius-kontrol); border: 1px solid var(--ttn-primer); background: var(--ttn-primer); color: var(--ttn-primer-teks); font: inherit; font-weight: var(--ttn-bobot-tebal); cursor: pointer; text-decoration: none; }
+.tombol.sekunder { background: var(--ttn-kartu); color: var(--ttn-primer); border-color: var(--ttn-garis-kuat); }
+.tombol.penuh { display: flex; width: 100%; }
+.tombol[disabled] { background: var(--ttn-netral-latar); color: var(--ttn-netral); border-color: var(--ttn-garis-kuat); cursor: not-allowed; }
+label { display: block; font-weight: var(--ttn-bobot-tebal); margin-bottom: var(--ttn-ruang-1); }
+input, select, textarea { width: 100%; min-height: var(--ttn-ruang-target-sentuh); padding: 0 var(--ttn-ruang-3); border: 1px solid var(--ttn-garis-kuat); border-radius: var(--ttn-radius-kontrol); background: var(--ttn-kartu); color: var(--ttn-teks); font: inherit; }
+textarea { padding: var(--ttn-ruang-3); min-height: 88px; }
+.baris-form { margin-bottom: var(--ttn-ruang-3); }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; font-variant-numeric: tabular-nums; }
+caption { text-align: left; font-weight: var(--ttn-bobot-tebal); padding-bottom: var(--ttn-ruang-1); }
+th, td { padding: var(--ttn-ruang-2) var(--ttn-ruang-1); border-bottom: 1px solid var(--ttn-garis); vertical-align: top; text-align: left; font-size: var(--ttn-ukuran-angka-tabel); }
+th { font-weight: var(--ttn-bobot-tebal); }
+td.n, th.n { text-align: right; }
+details { margin-top: var(--ttn-ruang-2); }
+summary { min-height: var(--ttn-ruang-target-sentuh); display: flex; align-items: center; cursor: pointer; font-weight: var(--ttn-bobot-tebal); color: var(--ttn-primer); }
+.grafik { width: 100%; height: auto; display: block; }
+.grafik text { font-family: var(--ttn-font-keluarga); font-size: 13px; fill: var(--ttn-teks-lembut); }
+.grafik .sumbu { stroke: var(--ttn-garis-kuat); stroke-width: 1; }
+.grafik .kisi { stroke: var(--ttn-garis); stroke-width: 1; }
+.grafik .pita { fill: var(--ttn-grafik-pita); }
+.grafik .gl { fill: none; stroke: var(--ttn-grafik-garis); stroke-width: 2.5; }
+.grafik .gl.putus { stroke-dasharray: 6 4; }
+.grafik .gr { fill: none; stroke: var(--ttn-grafik-riwayat); stroke-width: 2.5; }
+.grafik .titik { fill: var(--ttn-grafik-garis); }
+.grafik .label-gl { fill: var(--ttn-grafik-garis); font-weight: 600; }
+.grafik .label-gr { fill: var(--ttn-grafik-riwayat); font-weight: 600; }
+.legenda { display: flex; flex-wrap: wrap; gap: var(--ttn-ruang-2) var(--ttn-ruang-4); margin: var(--ttn-ruang-2) 0 0; padding: 0; list-style: none; font-size: var(--ttn-ukuran-keterangan); color: var(--ttn-teks-lembut); }
+.matriks { display: grid; grid-template-columns: 76px repeat(5, minmax(0, 1fr)); gap: 2px; font-variant-numeric: tabular-nums; }
+.matriks > * { min-width: 0; }
+.kepala-matriks { font-size: var(--ttn-ukuran-keterangan); font-weight: var(--ttn-bobot-tebal); padding: var(--ttn-ruang-1) 0; text-align: center; }
+.baris-matriks { font-size: var(--ttn-ukuran-keterangan); display: flex; align-items: center; }
+.sel-matriks { display: flex; align-items: center; justify-content: center; gap: 2px; min-height: 40px; font-size: var(--ttn-ukuran-keterangan); font-weight: var(--ttn-bobot-tebal); border-radius: 4px; padding: 0; }
+.sel-matriks b { font-weight: normal; }
+.tab { display: flex; gap: var(--ttn-ruang-2); margin: var(--ttn-ruang-3) 0; }
+.tab [role="tab"] { flex: 1 1 0; min-width: 0; min-height: var(--ttn-ruang-target-sentuh); border: 1px solid var(--ttn-garis-kuat); background: var(--ttn-kartu); color: var(--ttn-teks); border-radius: var(--ttn-radius-kontrol); font: inherit; cursor: pointer; }
+.tab [role="tab"][aria-selected="true"] { background: var(--ttn-primer); color: var(--ttn-primer-teks); border-color: var(--ttn-primer); font-weight: var(--ttn-bobot-tebal); }
+.rekomendasi, .rek-dialog { border-top: 1px solid var(--ttn-garis); padding: var(--ttn-ruang-3) 0; }
+.rekomendasi:first-of-type { border-top: 0; }
+.varian { margin-top: var(--ttn-ruang-6); padding-top: var(--ttn-ruang-3); border-top: 3px dashed var(--ttn-garis-kuat); }
+.varian-judul { font-size: var(--ttn-ukuran-keterangan); text-transform: uppercase; letter-spacing: .04em; color: var(--ttn-teks-lembut); margin: 0 0 var(--ttn-ruang-2); }
+.skeleton { height: 14px; border-radius: 4px; background: var(--ttn-netral-latar); margin: var(--ttn-ruang-2) 0; }
+.progres { height: 6px; border-radius: 3px; background: var(--ttn-netral-latar); overflow: hidden; }
+.progres i { display: block; height: 100%; width: 40%; background: var(--ttn-primer); }
+.kosong { text-align: center; padding: var(--ttn-ruang-6) var(--ttn-ruang-2); }
+.kosong .lencana { margin-bottom: var(--ttn-ruang-3); }
+.sr-saja { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
