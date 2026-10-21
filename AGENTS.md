@@ -1,6 +1,6 @@
 # AGENTS.md — titeny-design
 
-Sistem desain Titeny: token (warna sinyal, tipografi, angka IDR), flow, screen papan web dan desktop analis, serta tautan Figma; tidak memuat kode produk.
+Sistem desain Titeny: token (warna sinyal, tipografi, angka IDR), flow, screen papan web dan desktop analis, serta rujukan sumber desain (pencil.app); tidak memuat kode produk.
 
 ## Sumber kebenaran
 
@@ -22,7 +22,7 @@ Rujukan versi: `https://github.com/Coding-Skuy/Titeny-TownHall/tree/main/platfor
 ## Tech stack terkunci
 
 - Token via **style-dictionary 4.0.0** (`sd.config.json`, Node 22.9.0); keluaran CSS variable untuk `titeny-web` dan token warna untuk `titeny-app-kmp` (Compose).
-- Flow dan screen terdokumentasi dengan **link Figma terdaftar di README design**; tidak ada kode produk.
+- Flow dan screen terdokumentasi dengan **sumber desain pencil.app dicatat di README design**; tidak ada kode produk.
 - Aksesibilitas: kontras WCAG AA, status berwarna plus teks, grafik selalu punya tabel teks alternatif; papan terbaca pada 360 px tanpa scroll horizontal; angka IDR pemisah titik (42.500).
 - Perubahan flow besar = PRD/FSD versi baru di TownHall lebih dulu.
 - **Dilarang**: kode aplikasi, rahasia, atau data produksi di repo ini.

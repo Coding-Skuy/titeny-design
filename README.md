@@ -36,12 +36,14 @@ src/dashboard.md          # spesifikasi dasbor awal
 
 Prinsip: kontras tinggi untuk angka harga, status selalu warna + teks + bentuk, dan tata letak kartu yang sama antara web dan desktop.
 
-## Daftar tautan Figma
+## Sumber desain
 
-| Artefak | Tiket | Figma | Sumber desain-sebagai-kode |
-|---|---|---|---|
-| Token (warna sinyal, tipografi) | TTN-DSG-002 | **Belum dibuat** — butuh akun Figma pemilik tim; tidak dapat dibuat oleh agen | [`tokens/`](./tokens/) |
-| Flow + screen 3 papan web 360 px | TTN-DSG-003 | **Belum dibuat** (sama) | [`docs/flow/papan-web-360.md`](./docs/flow/papan-web-360.md), [`src/prototipe/web/`](./src/prototipe/web/) |
-| Flow + screen desktop analis (5 layar) | TTN-DSG-004 | **Belum dibuat** (sama) | [`docs/flow/desktop-analis.md`](./docs/flow/desktop-analis.md), [`src/prototipe/desktop/`](./src/prototipe/desktop/) |
+Sumber desain: **pencil.app** (tim tidak memakai Figma). Tidak ada tautan Figma yang perlu didaftarkan dan tidak ada blocker Figma.
 
-Selama berkas Figma belum ada, sumber kebenaran visual adalah berkas di repo ini. Baris tautan Figma akan diisi oleh manusia yang membuat berkasnya; jangan mengisi tautan karangan.
+| Artefak | Tiket | Sumber desain-sebagai-kode |
+|---|---|---|
+| Token (warna sinyal, tipografi) | TTN-DSG-002 | [`tokens/`](./tokens/) |
+| Flow + screen 3 papan web 360 px | TTN-DSG-003 | [`docs/flow/papan-web-360.md`](./docs/flow/papan-web-360.md), [`src/prototipe/web/`](./src/prototipe/web/) |
+| Flow + screen desktop analis (5 layar) | TTN-DSG-004 | [`docs/flow/desktop-analis.md`](./docs/flow/desktop-analis.md), [`src/prototipe/desktop/`](./src/prototipe/desktop/) |
+
+Konvensi berkas pencil.app: belum ada berkas `.pen`/ekspor pencil.app di repo ini. Bila ditambahkan, simpan di `design/pencil/` (nama `<artefak>.pen`, ekspor PNG di `design/pencil/export/`) dan tambahkan tautannya ke tabel di atas. Selama itu, sumber kebenaran visual adalah token dan prototipe statis di repo ini.

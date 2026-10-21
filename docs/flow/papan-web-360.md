@@ -1,6 +1,6 @@
 # Flow dan screen papan web 360 px (TTN-DSG-003)
 
-Rujukan: `produk/10-papan-insight.md` §2-§4, `PRD/30-kriteria.md` US-001..US-003, `FSD/10-alur.md` (urutan layar web). Token: `tokens/` (v0.2.0). Prototipe statis (HTML + CSS token, tanpa JS, data contoh ilustrasi): `src/prototipe/web/*.html`; bangun dengan `npm run build:tokens && node scripts/bangun-prototipe.mjs web`, lalu buka berkas di browser. Figma: belum ada (lihat README).
+Rujukan: `produk/10-papan-insight.md` §2-§4, `PRD/30-kriteria.md` US-001..US-003, `FSD/10-alur.md` (urutan layar web). Token: `tokens/` (v0.2.0). Prototipe statis (HTML + CSS token, tanpa JS, data contoh ilustrasi): `src/prototipe/web/*.html`; bangun dengan `npm run build:tokens && node scripts/bangun-prototipe.mjs web`, lalu buka berkas di browser. Sumber desain: pencil.app (lihat README).
 
 ## Flow
 

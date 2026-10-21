@@ -1,6 +1,6 @@
 # Flow dan screen desktop analis Windows (TTN-DSG-004)
 
-Rujukan: `produk/22-kontrak-desktop-windows.md` §2-§4, `PRD/30-kriteria.md` US-004, `FSD/10-alur.md` ("Urutan Layar Web dan Desktop"). Token: `tokens/` v0.2.0 (identik dengan web). Prototipe statis (HTML + CSS token, tanpa JS, data contoh ilustrasi): `src/prototipe/desktop/*.html`; bangun dengan `npm run build:tokens && node scripts/bangun-prototipe.mjs desktop`. Figma: belum ada (lihat README). Hanya analis internal; bukan petani/vendor.
+Rujukan: `produk/22-kontrak-desktop-windows.md` §2-§4, `PRD/30-kriteria.md` US-004, `FSD/10-alur.md` ("Urutan Layar Web dan Desktop"). Token: `tokens/` v0.2.0 (identik dengan web). Prototipe statis (HTML + CSS token, tanpa JS, data contoh ilustrasi): `src/prototipe/desktop/*.html`; bangun dengan `npm run build:tokens && node scripts/bangun-prototipe.mjs desktop`. Sumber desain: pencil.app (lihat README). Hanya analis internal; bukan petani/vendor.
 
 ## Kerangka jendela (min 1120 x 720)
 
