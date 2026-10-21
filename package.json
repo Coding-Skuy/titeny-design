@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build:tokens": "style-dictionary build --config sd.config.json && style-dictionary build --config sd.compose.config.json",
-    "test": "node --test scripts/*.test.mjs",
+    "test": "node --test --test-concurrency=1 scripts/*.test.mjs",
     "test:kontras": "node scripts/kontras.mjs"
   },
   "devDependencies": {
